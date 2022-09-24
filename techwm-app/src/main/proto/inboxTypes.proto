@@ -1,0 +1,22 @@
+syntax = "proto3";
+package il.ac.technion.cs.softwaredesign;
+
+option java_multiple_files = true;
+option java_package = "il.ac.technion.cs.softwaredesign";
+
+import "google/protobuf/timestamp.proto";
+
+message MessageP {
+  string id = 1;
+  string from = 2;
+  string message = 3;
+  google.protobuf.Timestamp timeSent = 4;
+}
+
+message MessageList {
+  repeated MessageP messages = 1;
+}
+
+message InboxP {
+  map<string, MessageList> record = 1;
+}
