@@ -4,9 +4,6 @@
 * David Deres
 * Adan Abo Hyeah
 
-## Notes
-
-Library used: 316278837-322252685
 
 ### Implementation Summary
 Well, as requested, we chose a library written by other students - it wraps SecureStorage and requires a binding for 
